@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Purple: hsl(259, 100%, 65%);
+    --Lightred: #ff5757;
+    --Offwhite: hsl(0, 0%, 94%);
+    --Lightgrey: hsl(0, 0%, 86%);
+    --Smokeygrey: hsl(0, 1%, 44%);
+    --Offblack: hsl(0, 0%, 8%);
+}
+body{
+    font-family: "Poppins";
+    background-color: var(--Lightgrey);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* start */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.time{
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    border-bottom-right-radius: 30%;
+    width: 800px;
+    margin: 20px;
+}
+.inputh{
+    display: flex;
+    justify-content: left;
+    margin-bottom: 50px;
+}
+p{
+    font-weight:bold ;
+    letter-spacing: 0.1cm;
+    margin-bottom: 5px;
+    color: var(--Smokeygrey);
+}
+input{
+    padding: 20px 15px;
+    border-radius: 5px;
+    border: 1px solid var(--Offwhite);
+    max-width: 150px;
+    font-size: 32px;
+    font-weight:bold ;
+}
+input:not(.nd){
+    margin-right: 40px;
+}
+
+hr{
+    border-top: 1px solid var(--Offwhite);
+    margin-bottom: 40px;
+}
+button{
+    background-color: var(--Purple);
+    border-radius: 50%;
+    border: 0;
+    padding: 20px;
+    position: absolute;
+    margin-left: 632px;
+    margin-top: -40px ;
+    transition: ease-in 0.2s;
+}
+
+button:hover{
+    background-color: black;
+}
+.result p{
+    font-size: 82px;
+    font-style: italic;
+}
+.cn{
+    display: flex;
+}
+.days,.months,.years{
+    color: var(--Purple);
+}
+.days + p,.months + p,.years + p{
+    color: black;
+}
+@media (max-width:758px){
+    input{
+        margin-right: 10px;
+        width: 90px;
+        font: 16px;
+        padding: 10px 5px;
+    }
+    button{
+        margin-left: 300px;
+    }
+    .result p{
+        font-size: 62px;
+    }
+}
+/* end */
